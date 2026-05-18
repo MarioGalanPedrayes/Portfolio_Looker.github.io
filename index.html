@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Looker · Inteligencia de negocio al alcance de todos</title>
+
+  <!--
+    ============================================================
+    FUENTES EXTERNAS
+    Se importan desde Google Fonts:
+    - "Playfair Display": fuente serif elegante para títulos
+    - "DM Sans": fuente moderna y legible para cuerpo de texto
+    ============================================================
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!--
+    HOJA DE ESTILOS EXTERNA
+    Todo el diseño visual está en styles.css (separado del HTML).
+  -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    BARRA DE NAVEGACIÓN
+    Fija en la parte superior. Contiene el logo y los enlaces
+    a cada sección de la página (navegación interna con anclas).
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / nombre del proyecto -->
+      <a href="#hero" class="nav-logo">
+        <span class="logo-dot"></span>
+        Looker
+      </a>
+
+      <!-- Enlaces a las 4 secciones principales -->
+      <ul class="nav-links">
+        <li><a href="#introduccion">¿Qué es?</a></li>
+        <li><a href="#permite">Lo que permite</a></li>
+        <li><a href="#necesita">Lo que necesita</a></li>
+        <li><a href="#ejemplo">Ejemplo real</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+    SECCIÓN HERO (PORTADA)
+    Primera pantalla que ve el usuario. Objetivo: captar atención
+    y dejar claro de qué va la web en menos de 5 segundos.
+    Contiene: título, subtítulo y botón de llamada a la acción.
+  ============================================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Fondo decorativo: rejilla de puntos animada (generada por CSS/JS) -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+
+      <!-- Etiqueta pequeña sobre el título -->
+      <span class="hero-tag">Inteligencia de negocio · Google Looker</span>
+
+      <!-- Título principal -->
+      <h1 class="hero-title">
+        Tus datos,<br />
+        <em>convertidos en decisiones</em>
+      </h1>
+
+      <!-- Subtítulo explicativo en lenguaje accesible -->
+      <p class="hero-subtitle">
+        Looker transforma las cifras de tu negocio en dashboards visuales
+        e interactivos. Sin fórmulas complicadas. Sin exportar a Excel.
+        Solo respuestas claras cuando las necesitas.
+      </p>
+
+      <!-- Botón que lleva a la primera sección de contenido -->
+      <a href="#introduccion" class="btn-primary">Descubrir cómo funciona</a>
+    </div>
+
+    <!-- Elemento visual decorativo: tarjeta de métrica flotante -->
+    <div class="hero-card" aria-hidden="true">
+      <div class="hero-card-inner">
+        <p class="card-label">Ingresos este mes</p>
+        <p class="card-value">€ 48.320</p>
+        <div class="card-bar-container">
+          <div class="card-bar" style="width: 72%"></div>
+        </div>
+        <p class="card-delta">▲ 12% respecto al mes anterior</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+    SECCIÓN 1 · INTRODUCCIÓN A LOOKER
+    Explica qué es Looker, de dónde viene y para qué sirve,
+    usando lenguaje comprensible para alguien sin formación técnica.
+  ============================================================ -->
+  <section class="section section-intro" id="introduccion">
+    <div class="container">
+
+      <!-- Cabecera de sección con número decorativo -->
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">¿Qué es Looker?</h2>
+        <p class="section-lead">
+          Una herramienta de Google que convierte los datos de tu negocio
+          en información útil, visual y siempre actualizada.
+        </p>
+      </div>
+
+      <!-- Bloques de contenido: dos columnas -->
+      <div class="intro-grid">
+
+        <!-- Columna izquierda: texto explicativo -->
+        <div class="intro-text">
+          <p>
+            Imagina que cada día tu negocio genera cientos de datos:
+            ventas, gastos, clientes, facturas... Esos datos normalmente
+            viven dispersos en hojas de cálculo, correos o sistemas
+            de contabilidad.
+          </p>
+          <p>
+            <strong>Looker</strong> es una plataforma de <em>Business
+            Intelligence</em> (inteligencia de negocio) que conecta todas
+            esas fuentes de datos y las presenta en un único lugar,
+            de forma visual, clara y actualizada en tiempo real.
+          </p>
+          <p>
+            Pertenece a <strong>Google Cloud</strong> desde 2020, lo que
+            garantiza su fiabilidad, seguridad y capacidad de crecer
+            junto con tu negocio.
+          </p>
+        </div>
+
+        <!-- Columna derecha: tarjetas de características clave -->
+        <div class="intro-cards">
+
+          <!-- Tarjeta 1 -->
+          <div class="feature-card" data-animate>
+            <div class="feature-icon">📊</div>
+            <h3>Visualización en tiempo real</h3>
+            <p>
+              Los gráficos se actualizan solos cuando llegan nuevos datos.
+              No hace falta refrescar ni recalcular nada manualmente.
+            </p>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="feature-card" data-animate>
+            <div class="feature-icon">🔗</div>
+            <h3>Conectado a tus fuentes</h3>
+            <p>
+              Se conecta a bases de datos, hojas de cálculo, sistemas de
+              facturación y cualquier herramienta donde vivan tus datos.
+            </p>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="feature-card" data-animate>
+            <div class="feature-icon">☁️</div>
+            <h3>100% en la nube</h3>
+            <p>
+              No necesitas instalar nada. Accedes desde el navegador,
+              con cualquier dispositivo, desde cualquier lugar.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECCIÓN 2 · LO QUE PERMITE
+    Muestra con ejemplos concretos qué puede hacer Looker
+    aplicado a finanzas y pequeños negocios.
+  ============================================================ -->
+  <section class="section section-permite" id="permite">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Lo que permite hacer</h2>
+        <p class="section-lead">
+          Ejemplos reales de cómo Looker ayuda a dueños de pequeños
+          negocios a tomar mejores decisiones financieras.
+        </p>
+      </div>
+
+      <!-- Lista de capacidades con icono, título y descripción -->
+      <div class="permite-list">
+
+        <!-- Capacidad 1 -->
+        <div class="permite-item" data-animate>
+          <div class="permite-icon-wrap">
+            <span class="permite-icon">💶</span>
+          </div>
+          <div class="permite-body">
+            <h3>Ver exactamente en qué gastas e ingresas</h3>
+            <p>
+              En lugar de revisar facturas una a una, Looker agrupa tus
+              ingresos y gastos por categoría, mes o cliente. De un vistazo
+              sabes si este trimestre vas mejor o peor que el anterior.
+            </p>
+          </div>
+        </div>
+
+        <!-- Capacidad 2 -->
+        <div class="permite-item" data-animate>
+          <div class="permite-icon-wrap">
+            <span class="permite-icon">📈</span>
+          </div>
+          <div class="permite-body">
+            <h3>Detectar tendencias antes de que sea tarde</h3>
+            <p>
+              Si las ventas de un producto llevan tres meses bajando,
+              Looker lo muestra con claridad en una línea de tiempo.
+              Puedes actuar antes de que el problema sea grave.
+            </p>
+          </div>
+        </div>
+
+        <!-- Capacidad 3 -->
+        <div class="permite-item" data-animate>
+          <div class="permite-icon-wrap">
+            <span class="permite-icon">🎯</span>
+          </div>
+          <div class="permite-body">
+            <h3>Comparar objetivos con la realidad</h3>
+            <p>
+              Puedes establecer metas mensuales (por ejemplo, facturar
+              €30.000) y ver en tiempo real qué porcentaje llevas alcanzado.
+              Sin esperar al cierre contable de fin de mes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Capacidad 4 -->
+        <div class="permite-item" data-animate>
+          <div class="permite-icon-wrap">
+            <span class="permite-icon">👥</span>
+          </div>
+          <div class="permite-body">
+            <h3>Compartir informes con tu equipo o gestor</h3>
+            <p>
+              Puedes enviar un enlace a tu contable, socio o inversor.
+              Cada uno ve solo lo que necesita ver, con datos siempre
+              actualizados. Sin adjuntar Excel por correo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Capacidad 5 -->
+        <div class="permite-item" data-animate>
+          <div class="permite-icon-wrap">
+            <span class="permite-icon">⚡</span>
+          </div>
+          <div class="permite-body">
+            <h3>Responder preguntas de negocio al instante</h3>
+            <p>
+              ¿Cuál fue mi cliente más rentable el año pasado? ¿Qué mes
+              suelo tener más gastos? Looker responde estas preguntas
+              en segundos, sin necesitar a nadie de IT.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECCIÓN 3 · LO QUE NECESITA
+    Explica el rol del programador, qué datos hay que proporcionar
+    y cómo funciona el proceso de implementación.
+    Incluye un diagrama de flujo visual.
+  ============================================================ -->
+  <section class="section section-necesita" id="necesita">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Lo que necesita</h2>
+        <p class="section-lead">
+          Looker es potente, pero no funciona solo. Necesita un punto
+          de partida: tus datos y un programador que los conecte.
+        </p>
+      </div>
+
+      <!--
+        DIAGRAMA DE FLUJO
+        Muestra los 4 pasos del proceso: Datos → Programador → Looker → Tú
+        Los pasos están enlazados por flechas decorativas.
+        La animación de entrada está gestionada por main.js.
+      -->
+      <div class="flow-diagram" id="flow-diagram">
+
+        <!-- Paso 1: El cliente (tú) -->
+        <div class="flow-step" data-step="1">
+          <div class="flow-step-icon">🗂️</div>
+          <h4>Tus datos</h4>
+          <p>
+            Facturas, ventas, gastos, nóminas... en cualquier formato:
+            Excel, base de datos, ERP, etc.
+          </p>
+        </div>
+
+        <!-- Flecha decorativa -->
+        <div class="flow-arrow" aria-hidden="true">→</div>
+
+        <!-- Paso 2: El programador -->
+        <div class="flow-step" data-step="2">
+          <div class="flow-step-icon">👩‍💻</div>
+          <h4>El programador</h4>
+          <p>
+            Conecta tus datos a Looker, define las métricas y construye
+            el modelo lógico con LookML.
+          </p>
+        </div>
+
+        <!-- Flecha decorativa -->
+        <div class="flow-arrow" aria-hidden="true">→</div>
+
+        <!-- Paso 3: Looker -->
+        <div class="flow-step" data-step="3">
+          <div class="flow-step-icon">🔍</div>
+          <h4>Looker</h4>
+          <p>
+            Procesa, organiza y presenta los datos en dashboards
+            visuales, listos para explorar.
+          </p>
+        </div>
+
+        <!-- Flecha decorativa -->
+        <div class="flow-arrow" aria-hidden="true">→</div>
+
+        <!-- Paso 4: El usuario final -->
+        <div class="flow-step" data-step="4">
+          <div class="flow-step-icon">💡</div>
+          <h4>Tú decides</h4>
+          <p>
+            Consultas, filtras y explotas la información sin tocar
+            una sola línea de código.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bloque explicativo: qué necesitas dar al programador -->
+      <div class="necesita-info">
+        <h3>¿Qué tienes que darle al programador?</h3>
+
+        <div class="necesita-grid">
+
+          <!-- Item 1 -->
+          <div class="necesita-card" data-animate>
+            <span class="necesita-num">01</span>
+            <h4>Acceso a tus datos</h4>
+            <p>
+              Credenciales de tu base de datos, exportaciones de tu
+              software de facturación o acceso a tu hoja de cálculo
+              compartida en Google Drive.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="necesita-card" data-animate>
+            <span class="necesita-num">02</span>
+            <h4>Las preguntas que quieres responder</h4>
+            <p>
+              "Quiero saber mis ingresos por cliente cada mes."
+              Cuanto más concreto seas, mejor será el dashboard.
+              El programador construye sobre tus preguntas reales.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="necesita-card" data-animate>
+            <span class="necesita-num">03</span>
+            <h4>Definir quién verá qué</h4>
+            <p>
+              ¿Quieres que tu gestor vea solo los gastos? ¿Que los
+              comerciales vean solo sus ventas? Hay que definir los
+              permisos y roles de acceso.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="necesita-card" data-animate>
+            <span class="necesita-num">04</span>
+            <h4>Tiempo de revisión</h4>
+            <p>
+              El primer dashboard tarda entre 1 y 4 semanas según la
+              complejidad. Tu participación en revisiones intermedias
+              es clave para que el resultado sea el que necesitas.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECCIÓN 4 · EJEMPLO PRÁCTICO
+    Caso real ficticio: "Asesoría Contable Ruiz & Asociados".
+    Incluye un dashboard interactivo simulado construido con JS.
+    El usuario puede interactuar con filtros básicos.
+  ============================================================ -->
+  <section class="section section-ejemplo" id="ejemplo">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Ejemplo real</h2>
+        <p class="section-lead">
+          Ruiz &amp; Asociados es una pequeña asesoría financiera con
+          8 empleados. Así usa Looker para controlar su negocio.
+        </p>
+      </div>
+
+      <!-- Contexto del caso de uso -->
+      <div class="caso-contexto">
+        <p>
+          Antes de Looker, el gerente recibía un informe en Excel cada
+          fin de mes. Llegaba tarde, era difícil de leer y no permitía
+          hacer preguntas sobre los datos. Ahora tiene este dashboard:
+        </p>
+      </div>
+
+      <!--
+        DASHBOARD SIMULADO
+        Este bloque simula la interfaz de Looker.
+        Los datos son ficticios pero representativos.
+        La interactividad (filtros, cambio de gráficos) la gestiona main.js.
+      -->
+      <div class="dashboard-wrapper">
+
+        <!-- Barra superior del dashboard (simula la UI de Looker) -->
+        <div class="dashboard-topbar">
+          <span class="dashboard-title-label">📋 Resumen Financiero · Ruiz &amp; Asociados</span>
+
+          <!-- Filtro de período (controlado por JS) -->
+          <div class="dashboard-filters">
+            <label for="filtro-periodo">Período:</label>
+            <select id="filtro-periodo" class="dashboard-select">
+              <option value="q1">Q1 2024</option>
+              <option value="q2">Q2 2024</option>
+              <option value="q3" selected>Q3 2024</option>
+              <option value="q4">Q4 2024</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- KPIs: métricas clave en tarjetas (actualizadas por JS) -->
+        <div class="kpi-row">
+
+          <div class="kpi-card">
+            <p class="kpi-label">Ingresos totales</p>
+            <p class="kpi-value" id="kpi-ingresos">€ 0</p>
+            <p class="kpi-trend positive" id="kpi-ingresos-trend">▲ —</p>
+          </div>
+
+          <div class="kpi-card">
+            <p class="kpi-label">Gastos totales</p>
+            <p class="kpi-value" id="kpi-gastos">€ 0</p>
+            <p class="kpi-trend negative" id="kpi-gastos-trend">▼ —</p>
+          </div>
+
+          <div class="kpi-card">
+            <p class="kpi-label">Beneficio neto</p>
+            <p class="kpi-value" id="kpi-beneficio">€ 0</p>
+            <p class="kpi-trend positive" id="kpi-beneficio-trend">▲ —</p>
+          </div>
+
+          <div class="kpi-card">
+            <p class="kpi-label">Clientes activos</p>
+            <p class="kpi-value" id="kpi-clientes">0</p>
+            <p class="kpi-trend positive" id="kpi-clientes-trend">▲ —</p>
+          </div>
+
+        </div>
+
+        <!-- Área de gráficos: barras y dona (dibujados por JS con Canvas API) -->
+        <div class="charts-row">
+
+          <!-- Gráfico de barras: ingresos vs gastos por mes -->
+          <div class="chart-box">
+            <p class="chart-title">Ingresos vs Gastos por mes</p>
+            <canvas id="chart-barras" width="480" height="220"></canvas>
+            <div class="chart-legend">
+              <span class="legend-dot" style="background:#2563eb"></span> Ingresos
+              <span class="legend-dot" style="background:#f59e0b; margin-left:1rem"></span> Gastos
+            </div>
+          </div>
+
+          <!-- Gráfico de dona: distribución de gastos -->
+          <div class="chart-box">
+            <p class="chart-title">Distribución de gastos</p>
+            <canvas id="chart-dona" width="220" height="220"></canvas>
+            <div class="chart-legend dona-legend" id="dona-legend"></div>
+          </div>
+
+        </div>
+
+        <!-- Tabla: top clientes por facturación -->
+        <div class="table-box">
+          <p class="chart-title">Top clientes por facturación</p>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Sector</th>
+                <th>Facturación</th>
+                <th>Crecimiento</th>
+              </tr>
+            </thead>
+            <!--
+              El cuerpo de la tabla se rellena dinámicamente
+              con JavaScript según el período seleccionado.
+            -->
+            <tbody id="tabla-clientes"></tbody>
+          </table>
+        </div>
+
+      </div>
+      <!-- / dashboard-wrapper -->
+
+      <!-- Nota aclaratoria debajo del dashboard -->
+      <p class="disclaimer">
+        * Los datos mostrados son ficticios y tienen únicamente fines ilustrativos.
+        Este dashboard simula la experiencia real de Looker.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    PIE DE PÁGINA (FOOTER)
+    Información del proyecto, créditos y nota sobre Claude.
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <!-- Logo repetido -->
+      <div class="footer-brand">
+        <span class="logo-dot"></span>
+        Looker Portfolio
+      </div>
+
+      <!-- Secciones de navegación rápida -->
+      <nav class="footer-nav" aria-label="Navegación pie de página">
+        <a href="#introduccion">¿Qué es?</a>
+        <a href="#permite">Lo que permite</a>
+        <a href="#necesita">Lo que necesita</a>
+        <a href="#ejemplo">Ejemplo real</a>
+      </nav>
+
+      <!-- Separador -->
+      <hr class="footer-divider" />
+
+      <!--
+        CRÉDITOS
+        Se menciona explícitamente la asistencia de Claude
+        en la elaboración de este proyecto.
+      -->
+      <p class="footer-credits">
+        Elaborado con asistencia de
+        <a href="https://claude.ai" target="_blank" rel="noopener">Claude (Anthropic)</a>
+        como práctica para uno de sus cursos.
+      </p>
+
+      <p class="footer-copy">
+        © 2024 · Proyecto educativo sin fines comerciales.
+        Looker es marca registrada de Google LLC.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!--
+    SCRIPT PRINCIPAL
+    Se carga al final del body para garantizar que todo el HTML
+    esté disponible antes de que JavaScript empiece a manipularlo.
+  -->
+  <script src="main.js"></script>
+
+</body>
+</html>
